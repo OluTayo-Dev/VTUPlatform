@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <title>VTUPlatform</title>
+</head>
+
+<body>
+
+    <section class="background md:lg:w-full">
+        <header class="bg-white rounded-full">
+            <nav class="flex justify-between items-center w-[92%] mx-auto">
+                <div>
+                    <img src="./public/asset/vtulogo.png" alt="" class="w-16" />
+                </div>
+                <div class="nav-links duration-500 md:lg:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                    <ul class="flex md:flex-row flex-col md:lg:items-center md:lg:gap-[4vw] gap-8">
+                        <li>
+                            <a class="hover:text-gray-500" href="#">Services</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-gray-500" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                   
+                </div>
+                <div class="flex items-center gap-6">
+                    <button class="bg-[#fff] text-[#1004B9] px-4 py-1 rounded-full hover:bg-[#87acec]">Login</button>
+                    <button class="bg-[#1004B9] text-[#ffff] px-4 py-1 md:lg:mt-1 mt-1 rounded-full hover:bg-[#87acec]">Sign Up</button>
+                    <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:lg:hidden"></ion-icon
+                </div>
+            </nav>
+        </header>
+    </section>
+    <div class="flex flex-col w-full md:lg:w-full md:lg:-mt-[15rem] -mt-[15rem] mx-8">
+        <div class="flex-col md:lg:text-left text-black">
+            <h1 class="text-white font-bold md:lg:text-4xl text-2xl ">Use VTUPlatform Services<br /> Everywhere You Go
+            </h1>
+            <p class="md:lg:max-w-sm max-w-sm text-white font-normal md:lg:text-sm text-sm md:lg:my-3 my-3 ">Join
+                hundreds of our active customers who rely on VTUPlatform for instant airtime, data activation and paying
+                of bills. Ready to explore?
+            </p>
+
+            <button type="submit"
+                class="bg-white md:lg:text-sm text-[8px] md:lg:w-[7vw] md:lg:h-[5vh] w-[15vw] h-[5vh] rounded-2xl md:lg:rounded-2xl md:lg:mb-5 mt-2 text-blue-700">Signup
+                Now</button>
+        </div>
+
+        <div class="md:lg:w-1/2 justify-end">
+            <img src="./public/asset/VTU.png" alt="" class="md:lg:-mt-[16rem] md:lg:w-[50%] w-full md:lg:ml-[70vw]" />
+        </div>
+    </div>
+
+    <section class="bg-[#F7F7F7]">
+        <p class="text-center text-2xl md:lg:text-3xl font-bold text-[#0F0114] md:lg:text-center md:lg:pt-12 pt-12">Our
+            <bold class="text-[#F66B03] font-bold ">Partners</bold>
+        </p>
+        <div class="flex flex-col mt-6 md:lg:mt-12 md:lg:flex-row md:lg:space-x-12">
+            <div
+                class="flex flex-col md:lg:flex-row md:lg:items-center md:lg:ml-36 items-center p-6 space-y-6  md:lg:w-1/4">
+                <img src="./public/asset/mtn.png" alt="" class="md:lg:w-[12rem] md:lg:h-[6rem] w-[12rem] h-[6rem]" />
+                <img src="./public/asset/9Mobile.png" alt="" class="md:lg:w-[12rem] md:lg:h-[6rem] w-[12rem] h-[6rem]" />
+                <img src="./public/asset/dstv.png" alt="" class="md:lg:w-[12rem] md:lg:h-[6rem] w-[12rem] h-[6rem]" />
+                <img src="./public/asset/gotv.png" alt="" class="md:lg:w-[12rem] md:lg:h-[6rem] w-[12rem] h-[6rem]" />
+                <img src="./public/asset/startime.png" alt=""
+                    class="md:lg:w-[12rem] md:lg:h-[6rem] w-[12rem] h-[6rem]" />
+            </div>
+        </div>
+
+        <span>
+            <p class="text-center text-2xl md:lg:text-3xl font-bold text-[#0F0114] md:lg:text-center md:lg:pt-12 pt-12">
+                Our Exclusive<bold class="text-[#F66B03] font-bold md:lg:pl-3 pl-3">Services</bold>
+            </p>
+        </span>
+        <div class="flex flex-col mt-6 md:lg:mt-12 md:lg:flex-row md:lg:space-x-12 space-x-6 md:lg:justify-center">
+            <div class="flex flex-col md:lg:flex-row md:lg:items-center items-center  md:lg:w-1/2 md:lg:gap-6 gap-6">
+                <div
+                    class="flex flex-col md:flex-row bg-[#F66B03] rounded-md md:lg:w-[25vw] md:lg:h-[27vh] w-[50vw] h-[40vh]">
+                    <div class="">
+                        <img src="./public/asset/frame3.png" alt=""
+                            class="md:lg:w-[10vw] md:lg:h-[7vh] w-[15vw] h-[7vh] md:lg:mt-16 mt-16 md:lg:mx-5 mx-5 ml-16" />
+                    </div>
+                    <div class="md:lg:space-y-6 space-y-4 space-x-6 md:lg:space-x-6">
+                        <h1 class="text-[#FFFF] md:lg:text-xl  font-bold md:lg:pt-3 pt-3 text-md">Buy Airtitme And Data
+                        </h1>
+                        <p class=" text-[#FFF] text-[10px] md:lg:text-[12px] font-normal">
+                            We offer a juicy range of solutionsto cater for your communication. With our data and
+                            airtime service, you get to enjoy uninterrupted connectivity, reliable performance, and
+                            flexible options conveniently.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex flex-col md:flex-row bg-[#FFFF] rounded-md md:lg:w-[25vw] md:lg:h-[27vh] w-[50vw] h-[40vh] border border-[#F66B03] outline-t-0">
+                    <div class="">
+                        <img src="./public/asset/frame2.png" alt=""
+                            class="md:lg:w-[10vw] md:lg:h-[7vh] w-[15vw] h-[7vh] md:lg:mt-16 mt-16 md:lg:mx-5 mx-5 ml-16" />
+                    </div>
+                    <div class="md:lg:space-y-6 space-y-4 space-x-6 md:lg:space-x-6">
+                        <h1 class="text-black md:lg:text-xl text-lg font-bold md:lg:pt-3 pt-3 text-center">Pay Utility
+                            Bills</h1>
+                        <p class=" text-black text-[10px] md:lg:text-[12px] font-normal">
+                            Enjoy our convenient bill payment services to make managing your expenses easy. With just a
+                            few clicks, you get to pay for your internet, electricity, cable TV payments and other
+                            utility bills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="flex flex-col md:flex-row bg-[#FFFF] rounded-md md:lg:w-[25vw] md:lg:h-[27vh] w-[50vw] h-[40vh] md:lg:ml-[35rem] md:lg:mt-4 mt-4 ml-[5.8rem] border border-[#F66B03]">
+            <div class="">
+                <img src="./public/asset/frame3.png" alt=""
+                    class="md:lg:w-[10vw] md:lg:h-[7vh] w-[15vw] h-[7vh] md:lg:mt-16 mt-16 md:lg:mx-5 mx-5 ml-16" />
+            </div>
+            <div class="md:lg:space-y-6 space-y-4 space-x-6 md:lg:space-x-6">
+                <h1 class="text-black md:lg:text-xl text-md font-bold md:lg:pptt-3 -3 px-2">Educational Payment</h1>
+                <p class=" text-black text-[10px] md:lg:text-[12px] font-normal">
+                    We are committed to empower students, educators and lifelong learners with our educational tool
+                    services. Say goodbye to manual processes and embrace digital ease for your education. <a href="#"
+                        class="text-blue-700">Sign Up Now</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="">
+            <p class="text-center text-2xl md:lg:text-3xl font-bold text-[#0F0114] md:lg:text-center md:lg:pt-12 pt-12">
+                How it<bold class="text-[#F66B03] font-bold md:lg:pl-3 pl-3">Works</bold>
+            </p>
+            
+             <div class="flex flex-col md:lg:flex-row items-center md:lg:items-center space-y-6 md:lg:space-y-12 mt-12">
+                <div class="space-x-4 md:lg:w-1/5 w-1/2">
+                    <img src="./public/asset/Group.png" alt="" class="md:lg:w-[14vw] md:lg:h-[30vh] md:lg:-mb-16  md:lg:ml-6"/>
+                    <h3 class="text-[#0F0114] text-md md:lg:text-xl text-center md:lg:text-center font-bold">Register</h3>
+                    <p class="text-[#0F0114] text-sm md:lg:text-[12px] ">Click on the the Sign up botton to get started easily, fill in your correct details. Welcome message awaits you. Thanks for choosing us!</p>
+                </div>
+
+                <div class="">
+                    <img src="./public/asset/Group19.png" alt="" class="md:lg:-mt-[80px]"/>
+                </div>
+
+                <div class="space-x-4 md:lg:w-1/5 w-1/2">
+                    <img src="./public/asset/Group2.png" alt="" class="md:lg:w-[14vw] md:lg:h-[30vh] md:lg:-mb-16  md:lg:ml-6"/>
+                    <h3 class="text-[#0F0114] text-md md:lg:text-xl text-center md:lg:text-center font-bold">Fund Your E-wallet</h3>
+                    <p class="text-[#0F0114] text-sm md:lg:text-[12px] md:lg:pb-12 ">After you have registered and activated your account, fund your wallet to start enjoying successful transactions.</p>
+                </div>
+
+                <div class="">
+                    <img src="./public/asset/Group19.png" alt="" class="md:lg:-mt-[80px] "/>
+                </div>
+
+                <div class="space-x-4 md:lg:w-1/5 w-1/2">
+                    <img src="./public/asset/Group3.png" alt="" class="md:lg:w-[14vw] md:lg:h-[30vh] md:lg:-mb-16  md:lg:ml-6"/>
+                    <h3 class="text-[#0F0114] text-md md:lg:text-xl text-center md:lg:text-center font-bold">Start Successful transactions</h3>
+                    <p class="text-[#0F0114] text-sm md:lg:text-[12px] ">Yes! You are good to start enjoying our unlimited and affordable services. Just Dey Enjoy.</p>
+                </div>
+
+             </div>
+
+        </div>
+
+        <div class="">
+            <p class="text-center text-2xl md:lg:text-3xl font-bold text-[#0F0114] md:lg:text-center md:lg:pt-12 pt-12">
+                Why Stay With Us<bold class="text-[#F66B03] font-bold md:lg:pl-3 pl-3">@VTUPlatform</bold>
+            </p>
+            <p class="text-center text-sm md:lg:text-center md:lg:text-lg font-normal text-[#0F0114]">At VTUPlatform we strive to create innovative services, keeping up to provide the needs and wants for customers like you.</p>
+
+            <div class="flex flex-col md:flex-row space-y-4 md:lg:space-y-6 mx-auto">
+                <main class="md:lg:w-1/2 md:lg:ml-[10rem] ml-[3rem]">
+                    <img src="./public/asset/Grouping.png" alt="" class="md:lg:w-[60%] w-[70%]" />
+                </main>
+
+                <main class="flex-col md:lg:flex-row">
+                    <div class="items-center space-x-2 md:lg:-ml-[14rem]">
+                        <div class="px-6 py-2 text-white font-medium rounded-full md:lg:py-1 bg-[#F66B03] md:lg:bg-[#F66B03] md:lg:w-[5vw] md:lg:h-[10vh] w-[5vw] h-[8vh] text-lg md:lg:text-2xl">
+                            1
+                        </div>
+                        <h3 class="text-base font-medium md:lg:mb-4 md:lg:-mt-12 -mt-12 md:lg:pl-16 pl-16 ">Quick and secure transactions</h3>
+                        <p class="text-sm md:lg:text-md max-w-sm md:lg:pl-12 pl-12">Your trust means alot to us, the reason why you can make payment confidently, knowing fully that your transactions and personal information are protected</p>
+                    </div>
+
+                    <div class="items-center space-x-2 md:lg:-ml-[14rem]">
+                        <div class="px-6 py-2 text-white font-medium rounded-full md:lg:py-1 bg-[#F66B03] md:lg:bg-[#F66B03] md:lg:w-[5vw] md:lg:h-[10vh] w-[5vw] h-[8vh] text-lg md:lg:text-2xl">
+                            2
+                        </div>
+                        <h3 class="text-base font-medium md:lg:mb-4 md:lg:-mt-12 -mt-12 md:lg:pl-16 pl-16 ">Instant Activation</h3>
+                        <p class="text-sm md:lg:text-md max-w-sm md:lg:pl-12 pl-12">Are you tired of 30min activation after purchase? You 've come to the right place. Get started to enjoy 5 seconds of instant activation</p>
+                    </div>
+                    <div class="items-center space-x-2 md:lg:-ml-[14rem]">
+                        <div class="px-6 py-2 text-white font-medium rounded-full md:lg:py-1 bg-[#F66B03] md:lg:bg-[#F66B03] md:lg:w-[5vw] md:lg:h-[10vh] w-[5vw] h-[8vh] text-lg md:lg:text-2xl">
+                            3
+                        </div>
+                        <h3 class="text-base font-medium md:lg:mb-4 md:lg:-mt-12 -mt-12 md:lg:pl-16 pl-16 ">One-stop Bill Payment</h3>
+                        <p class="text-sm md:lg:text-md max-w-sm md:lg:pl-12 pl-12">Say goodbye to juggling multiple due dates. VTUPlatform allows you to settle all your utiltities to internet services, convieniently in one place</p>
+                    </div>
+                    <div class="items-center space-x-2 md:lg:-ml-[14rem]">
+                        <div class="px-6 py-2 text-white font-medium rounded-full md:lg:py-1 bg-[#F66B03] md:lg:bg-[#F66B03] md:lg:w-[5vw] md:lg:h-[10vh] w-[5vw] h-[8vh] text-lg md:lg:text-2xl">
+                            4
+                        </div>
+                        <h3 class="text-base font-medium md:lg:mb-4 md:lg:-mt-12 -mt-12 md:lg:pl-16 pl-16 ">24/7 Availability</h3>
+                        <p class="text-sm md:lg:text-md max-w-sm md:lg:pl-12 pl-12">Need to make payment or encounter technical problems at midnight? Our platform and customer Care Support are available 24/7, so you manage your transactions whenever and wherever.</p>
+                    </div>
+                    <div class="items-center space-x-2 md:lg:-ml-[14rem]">
+                        <div class="px-6 py-2 text-white font-medium rounded-full md:lg:py-1 bg-[#F66B03] md:lg:bg-[#F66B03] md:lg:w-[5vw] md:lg:h-[10vh] w-[5vw] h-[8vh] text-lg md:lg:text-2xl">
+                            5
+                        </div>
+                        <h3 class="text-base font-medium md:lg:mb-4 md:lg:-mt-12 -mt-12 md:lg:pl-16 pl-16 ">User-Friendly Interface</h3>
+                        <p class="text-sm md:lg:text-md max-w-sm md:lg:pl-12 pl-12">VTUPlatform ensures a very friendly interface to access at your convenient time with no extra help. Just Dey Enjoy!</p>
+                    </div>
+                    
+                </main>
+            </div> 
+        </div>
+
+        <div>
+            <main class="flex flex-col md:flex-row space-y-6 md:lg:justify-center justify-center">
+                <div class="text-sm mt-5 px-4 md:lg:text-2xl md:lg:mt-5">
+                    <p class="max-w-sm text-[#0F0114] font-bold">How to Recharge, Pay Bills And Subscribe <strong class="text-[#F66B03]font-bold md:lg:px-2 px-2">Data</strong></p>
+                </div>
+                <main class="bg-[#1004B9] md:lg:w-[35vw] md:lg:h-[47vh] w-[70vw] h-[55vh] rounded-lg ml-[2rem]">
+                   <div class="px-4 md:lg:mx-5 mx-5 md:lg:my-5 my-5 text-black bg-white font-medium rounded-full md:lg:py-1 md:lg:w-[2vw] md:lg:h-[5vh] w-[2vw] h-[4vh] text-sm md:lg:text-lg">
+                    1
+                   </div>
+                   <p class="text-[#FFFF] md:lg:-mt-12 -mt-12 md:lg:ml-16 ml-16 md:lg:mt-6 md:lg:text-md text-sm font-medium">Login to your Dashboard</p>
+
+                   <div class="px-4 md:lg:mx-5 mx-5 md:lg:my-5 my-5 text-black bg-white font-medium rounded-full md:lgpy-1 md:lg:w-[2vw] md:lg:h-[5vh] w-[2vw] h-[4vh] text-sm md:lg:text-lg">
+                    2
+                   </div>
+                   <p class="text-[#FFFF] md:lg:-mt-12 -mt-12 md:lg:ml-16 ml-16 md:lg:mt-6 md:lg:text-md text-sm font-medium">Select the service younwant to use</p>
+
+                   <div class="px-4 md:lg:mx-5 mx-5 md:lg:my-5 my-5 text-black bg-white font-medium rounded-full md:lgpy-1 md:lg:w-[2vw] md:lg:h-[5vh] w-[2vw] h-[4vh] text-sm md:lg:text-lg">
+                    3
+                   </div>
+                   <p class="text-[#FFFF] md:lg:-mt-12 -mt-12 md:lg:ml-16 ml-16 md:lg:mt-6 md:lg:text-md text-sm font-medium">Enter your information</p>
+                   <div class="px-4 md:lg:mx-5 mx-5 md:lg:my-5 my-5 text-black bg-white font-medium rounded-full md:lgpy-1 md:lg:w-[2vw] md:lg:h-[5vh] w-[2vw] h-[4vh] text-sm md:lg:text-lg">
+                    4
+                   </div>
+                   <p class="text-[#FFFF] md:lg:-mt-12 -mt-12 md:lg:ml-16 ml-16 md:lg:mt-6 md:lg:text-md text-sm font-medium">Enter the amount you want to pay or the amount of airtime or data you want to subscribe to</p>
+                   <div class="px-4 md:lg:mx-5 mx-5 md:lg:my-5 my-5 text-black bg-white font-medium rounded-full md:lgpy-1 md:lg:w-[2vw] md:lg:h-[5vh] w-[2vw] h-[4vh] text-sm md:lg:text-lg">
+                    5
+                   </div>
+                   <p class="text-[#FFFF] md:lg:-mt-12 -mt-12 md:lg:ml-16 ml-16 md:lg:mt-6 md:lg:text-md text-sm font-medium">Click "Pay" or "Recharge".</p>
+
+                   <div class="px-4 md:lg:mx-5 mx-5 md:lg:my-5 my-5 text-black bg-white font-medium rounded-full md:lgpy-1 md:lg:w-[2vw] md:lg:h-[5vh] w-[2vw] h-[4vh] text-sm md:lg:text-lg">
+                    6
+                   </div>
+                   <p class="text-[#FFFF] md:lg:-mt-12 -mt-12 md:lg:ml-16 ml-16 md:lg:mt-6 md:lg:text-md text-sm font-medium">Viola! Congratulation....Transaction successful</p>
+
+                </main> 
+
+                
+            </main>
+        </div>
+
+        <div class="flex flex-col md:flex-row md:lg:w-full w-full md:lg:mt-5 mt-5">
+            <img src="./public/asset/About Us.png" alt="" class="" />
+        </div>
+
+        <div class="text-[#0F0114] text-center text-md md:lg:text-center md:lg:text-2xl font-bold md:lg:mt-8 mt-8">
+            Affordable Data Plans and Prices
+        </div>
+
+        <div class="flex flex-col md:lg:flex-row space-x-6 md:lg:space-x-12 md:lg:justify-center">
+            <div class="rounded-lg bg-[#FFFF] md:lg:w-[20vw] md:lg:h-[80vh] w-[70vw] h-[60vh] ml-[26px] md:lg:mt-5 mt-5 md:lg:text-md text-sm shadow-md">
+               <div class="ml-24 my-12">
+                <img src="./public/asset/mylogo1.png" alt="" width="70px" height="20px" />
+                <p class="text-black text-md font-normal ">MTN DATA</p>
+               </div>
+
+               <div class="space-x-12 md:lg:space-x-6">
+                <table class="">
+                    <tr class="">
+                       <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">500.0MB</th>
+                       <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#170</th>
+                       <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</th>
+                    </tr>
+                    <tr>
+                       <td class="px-4 md:lg:px-4">1.0GB</td>
+                       <td class="px-4 md:lg:px-4">#320</td>
+                       <td class="px-4 md:lg:px-4">30days</td>
+                    </tr>
+                    <tr>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                    </tr>
+                    <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                       <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                    </tr>
+                 </table>
+                 
+               </div>
+                 <div class="text-sm md:lg:text-sm text-white md:lg:-mt-8 -mt-8">
+                    <button type="submit" class="bg-blue-700 rounded-lg md:lg:w-[8vw] md:lg:h-[4vh] w-[25vw] h-[4vh] outline-0 border-0 md:lg:ml-[70px] ml-[70px] md:lg:mt-12 mt-12">Get Started</button>
+                 </div>
+            </div>
+
+            <div class="rounded-lg bg-[#FFFF] md:lg:w-[20vw] md:lg:h-[80vh] w-[70vw] h-[60vh] mt-5 ml-12 md:lg:text-md text-sm shadow-md">
+                <div class="ml-24 my-12">
+                 <img src="./public/asset/mylogo.png" alt="" width="70px" height="20px" />
+                 <p class="text-black text-md font-normal ">GLO DATA</p>
+                </div>
+ 
+                <div class="space-x-12 md:lg:space-x-6">
+                 <table class="">
+                     <tr class="">
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">500.0MB</th>
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#170</th>
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</th>
+                     </tr>
+                     <tr>
+                        <td class="px-4 md:lg:px-4">1.0GB</td>
+                        <td class="px-4 md:lg:px-4">#320</td>
+                        <td class="px-4 md:lg:px-4">30days</td>
+                     </tr>
+                     <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                  </table>
+                  
+                </div>
+                  <div class="text-sm md:lg:text-sm text-white md:lg:-mt-8 -mt-8">
+                     <button type="submit" class="bg-blue-700 rounded-lg md:lg:w-[8vw] md:lg:h-[4vh] w-[25vw] h-[4vh] outline-0 border-0 md:lg:ml-[70px] ml-[70px] md:lg:mt-12 mt-12">Get Started</button>
+                  </div>
+             </div>
+
+             <div class="rounded-lg bg-[#FFFF] md:lg:w-[20vw] md:lg:h-[80vh] w-[70vw] h-[60vh] ml-12 mt-5 md:lg:text-md text-sm shadow-md">
+                <div class="ml-24 my-12">
+                 <img src="./public/asset/mylogo3.png" alt="" width="70px" height="20px" />
+                 <p class="text-black text-md font-normal ">AIRTEL DATA</p>
+                </div>
+ 
+                <div class="space-x-12 md:lg:space-x-6">
+                 <table class="">
+                     <tr class="">
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">500.0MB</th>
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#170</th>
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</th>
+                     </tr>
+                     <tr>
+                        <td class="px-4 md:lg:px-4">1.0GB</td>
+                        <td class="px-4 md:lg:px-4">#320</td>
+                        <td class="px-4 md:lg:px-4">30days</td>
+                     </tr>
+                     <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                  </table>
+                  
+                </div>
+                  <div class="text-sm md:lg:text-sm text-white md:lg:-mt-8 -mt-8">
+                     <button type="submit" class="bg-blue-700 rounded-lg md:lg:w-[8vw] md:lg:h-[4vh] w-[25vw] h-[4vh] outline-0 border-0 md:lg:ml-[70px] ml-[70px] md:lg:mt-12 mt-12">Get Started</button>
+                  </div>
+             </div>
+
+             <div class="rounded-lg bg-[#FFFF] md:lg:w-[20vw] md:lg:h-[80vh] w-[70vw] h-[60vh] ml-12  mt-5 md:lg:text-md text-sm shadow-md">
+                <div class="ml-24 my-12">
+                 <img src="./public/asset/mylogo2.png" alt="" width="70px" height="20px" />
+                 <p class="text-black text-md font-normal ">9MOBILE DATA</p>
+                </div>
+ 
+                <div class="space-x-12 md:lg:space-x-6 ">
+                 <table class="">
+                     <tr class="">
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">500.0MB</th>
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#170</th>
+                        <th class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</th>
+                     </tr>
+                     <tr>
+                        <td class="px-4 md:lg:px-4">1.0GB</td>
+                        <td class="px-4 md:lg:px-4">#320</td>
+                        <td class="px-4 md:lg:px-4">30days</td>
+                     </tr>
+                     <tr>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                     <tr>
+                         <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">2.0GB</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">#640</td>
+                        <td class="px-4 md:lg:px-4 space-y-12 md:lg:space-y-12">30days</td>
+                     </tr>
+                  </table>
+                  
+                </div>
+                  <div class="text-sm md:lg:text-sm text-white md:lg:-mt-8 -mt-8">
+                     <button type="submit" class="bg-blue-700 rounded-lg md:lg:w-[8vw] md:lg:h-[4vh] w-[25vw] h-[4vh] outline-0 border-0 md:lg:ml-[70px] ml-[70px] md:lg:mt-12 mt-12">Get Started</button>
+                  </div>
+             </div>
+        </div>
+
+        <div>
+            <div class="text-[#0F0114] text-center text-md md:lg:text-center md:lg:text-3xl font-bold md:lg:mt-8 mt-8 ">
+                What our customers Have To Say About us
+            </div>
+
+            <div class="carousel mx-12  flex-col md:lg:flex-row md:lg:mt-8 mt-8">
+                <div class="main-carousel">
+                    <div class="cell">
+                      <div class="bg-white rounded-md shadow-lg">
+                        <div class="flex flex-col md:flex-row">
+                            <img src="./public/asset/Eclipse3.png" alt="..." class="w-16 ml-12 md:lg:w-16 md:lg:ml-12">
+                               <div class="text-center">
+                                <p class="text-black font-bold">Faith</p>
+                                <p class="text-black">Customer</p>
+                               </div>
+                        </div>
+                        <p class="text-black md:lg:text-sm text-[10px] max-w-sm md:lg:pt-8 pt-2 px-5">"Data Bundle For My Needs To Not Miss A Beat Online. Big Thanks To WillyConnect."</p>
+                      </div>
+                    </div>
+                    <div class="cell">
+                   
+                      <div class="bg-[#1004B9] rounded-md shadow-lg">
+                        <div class="flex flex-col md:flex-row">
+                            <img src="./public/asset/Eclipse2.png" alt="..." class="w-16 ml-12 md:lg:w-16 md:lg:ml-12">
+                               <div class="text-center">
+                                <p class="text-white font-bold">Faith</p>
+                                <p class="text-white">Customer</p>
+                               </div>
+                        </div>
+                        <p class="text-white md:lg:text-sm text-[10px] max-w-sm md:lg:pt-8 pt-2 px-5">"VTUPlatform is A Game-Changer! No Longer Stress About Managing Bills. I settle My Bills At My Best Convenient Time."</p>
+                      </div>
+                    </div>
+                    <div class="cell">
+                      
+                      <div class="bg-white rounded-md shadow-lg">
+                        <div class="flex flex-col md:flex-row">
+                            <img src="./public/asset/Eclipse3.png" alt="..." class="w-16 ml-12 md:lg:w-16 md:lg:ml-12">
+                               <div class="text-center">
+                                <p class="text-black font-bold">Faith</p>
+                                <p class="text-black">Customer</p>
+                               </div>
+                        </div>
+                        <p class="text-black md:lg:text-sm text-[10px]  md:lg:pt-8 pt-2 px-5">"To Recharge Airtime Has Never Been This Easy. VTUPlatform saves Me Time And Effort. The Instant Activation Bursts My Brain. Honestly, VTUPlatform is the New Way To Live Easy Life."</p>
+                      </div>
+                    </div>
+                
+                  </div>
+            </div>
+    
+        </div>
+        <section class="">
+            <div class="text-[#0F0114] text-center text-md md:lg:text-center md:lg:text-3xl font-bold md:lg:mt-8 mt-8">
+                Frequently Asked Questions
+            </div>
+             
+              <section class="accordion pb-12">
+                
+                <details class="">
+                    <hr class="">
+                    <summary>Which button between SIGN UP and LOGIN will I click to get started?</summary>
+                    <p>Kindly click on Sign up to GET STARTED and login button to access your dashboard after activating your account</p>
+                    <hr class="">
+                </details>
+        
+                <details>
+                    <hr class="">
+                    <summary>Which button between SIGN UP and LOGIN will I click to get started?</summary>
+                    <p class="">Kindly click on Sign up to GET STARTED and login button to access your dashboard after activating your account</p>
+                    <hr class="">
+                </details>
+        
+                <details>
+                    <hr class="">
+                    <summary>Which button between SIGN UP and LOGIN will I click to get started?</summary>
+                    <p>Kindly click on Sign up to GET STARTED and login button to access your dashboard after activating your account</p>
+                    <hr class="">
+                </details>
+        
+                <details>
+                    <hr class="">
+                    <summary>Which button between SIGN UP and LOGIN will I click to get started?</summary>
+                    <p>Kindly click on Sign up to GET STARTED and login button to access your dashboard after activating your account</p>
+                    <hr class="">
+                </details>
+                
+              </section>
+        </section>
+    </section>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+  // options
+  cellAlign: 'left',
+  wrapAround: true,
+  freeScroll: true
+});
+</script>
+
+
+
+<section>
+    <footer class="bg-[#0F0114] md:lg:min-h-[40vh]">
+        <div class="">
+            <div class="flex flex-col items-center  space-y-12 md:lg:flex-row md:space-y-0 md:items-start md:space-x-24 md:lg:pt-5">
+                <div class=" justify-center space-x-4 text-white md:lg:ml-4">
+                    <p class="max-w-sm text-white md:lg:text-sm text-[11px]">At VTUPlatform We strive by a simple yet powerful tech vision to empower individuals by simplifying their everyday needs and wants. We rendered an easy to use platform for your data, airtime and bills payment. the wait? Enjoy the hassle-free lifestyle.
+                    </p>
+                    <div class="ml-[2rem]">
+                        <button class=" hidden bg-[#ffff] text-[#1004B9] px-1 py-1 rounded-full hover:bg-[#87acec] md:lg:mt-3 mt-3">Signup Today</button>
+                    </div>
+                </div>
+                
+                <div class="space-y-6 md:lg:space-x-12 text-[#fff] md:lg:text-md text-[11px]">
+                    <ul class="space-y-4 md:lg:space-y-4 justify-center">
+                        <li>
+                            <a class="font-bold"href="#">Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Airtime & Data</a>
+                        </li>
+                        <li>
+                            <a href="#">Internet Bills</a>
+                        </li>
+                        <li>
+                            <a href="#">Education</a>
+                        </li>
+                        <li>
+                            <a href="#">Cable Bills</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-6 md:lg:space-x-12 text-[#fff] md:lg:text-md text-[11px]">
+                    <ul class="space-y-4 md:lg:space-y-4 justify-center">
+                        <li>
+                            <a class="font-bold" href="#">Company</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Story</a>
+                        </li>
+                        <li>
+                            <a href="#">Our Mission</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonials</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-6 md:lg:space-x-12 text-[#fff] md:lg:text-md text-[11px]">
+                    <ul class="space-y-4 md:lg:space-y-4 justify-center">
+                        <li>
+                            <a class="font-bold" href="#">Policies</a>
+                        </li>
+                        <li>
+                            <a class=""href="#">Terms and Condition</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+                <div class="space-y-6 md:lg:space-x-12 text-[#fff] md:lg:text-md text[11px]">
+                    <ul class="space-y-4 md:lg:space-y-4">
+                        <li>
+                            <a class="font-bold"href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Airtime & Data</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="ml-[9rem]">
+                <button class=" md:lg:hidden bg-[#ffff] text-[#1004B9] px-1 py-1 rounded-full hover:bg-[#87acec] md:lg:mt-3 mt-3">Signup Today</button>
+            </div>
+            <div class="flex flex-col md:flex-row w-full md:lg:w-auto">
+                <hr class="bg-slate-500 w-[90%] md:lg:w-[90%]  ml-[1.94rem] md:lg:ml-[3rem] md:lg:mt-5 mt-5">
+            </div>
+            <div class="flex flex-col md:flex-row md:lg:justify-center justify-center">
+                <p class="text-white text-[10px] md:lg:text-sm -mr-[30rem] pl-24">Copyright@VTUPlatform All Right Reserved 2023</p>
+                <div class="gap-8 md:lg:gap-[4vw] ml-[45rem] md:lg:ml-[45rem]">
+                    <ion-icon class="text-white" name="logo-twitter"></ion-icon>
+                <ion-icon class="text-white"name="logo-facebook"></ion-icon>
+                <ion-icon class="text-white"name="logo-instagram"></ion-icon>
+                </div>
+
+            </div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+ <script>
+     const navLinks = document.querySelector('.nav-links')
+    function onToggleMenu(e){
+        e.name = e.name==='menu-outline' ? 'close' : 'menu'
+        navLinks.classList.toggle('top-[9%]')
+    }
+</script> 
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
